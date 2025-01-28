@@ -8,7 +8,7 @@ packages:
   gitUsername: sttlab-tech
   gitBranch: main
 services:
-- serviceName: project.sttipaasdemo.integrations:sayHello
+- serviceName: project.sttipaasdemo.integrations:sayhello
   packages:
   - name: SttiPaaSDemoProject
     version: "1.0"

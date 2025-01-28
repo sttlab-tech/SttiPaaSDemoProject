@@ -7,3 +7,8 @@ packages:
   gitUrl: https://github.com/sttlab-tech
   gitUsername: sttlab-tech
   gitBranch: main
+services:
+- serviceName: project.sttipaasdemo.integrations:sayHello
+  packages:
+  - name: SttiPaaSDemoProject
+    version: "1.0"

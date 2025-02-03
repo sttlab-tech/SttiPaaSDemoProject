@@ -7,6 +7,11 @@ packages:
   gitUrl: https://github.com/sttlab-tech
   gitUsername: sttlab-tech
   gitBranch: main
+- name: qdtContactManagement
+  gitServerName: sttlab GH
+  gitUrl: https://github.com/sttlab-tech
+  gitUsername: sttlab-tech
+  gitBranch: main
 services:
 - serviceName: project.sttipaasdemo.integrations:sayhello
   packages:

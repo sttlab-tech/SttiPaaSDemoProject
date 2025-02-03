@@ -8,12 +8,19 @@ packages:
   gitUsername: sttlab-tech
   gitBranch: main
 - name: qdtContactManagement
+  version: "1.0"
   gitServerName: sttlab GH
   gitUrl: https://github.com/sttlab-tech
   gitUsername: sttlab-tech
   gitBranch: main
+security:
+- name: qdtContactManagement
+  allowedServices: []
+  javaServiceSetting: ALL
 services:
 - serviceName: project.sttipaasdemo.integrations:sayhello
   packages:
   - name: SttiPaaSDemoProject
+    version: "1.0"
+  - name: qdtContactManagement
     version: "1.0"

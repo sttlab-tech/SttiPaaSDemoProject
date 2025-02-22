@@ -13,14 +13,66 @@ packages:
   gitUrl: https://github.com/sttlab-tech
   gitUsername: sttlab-tech
   gitBranch: main
-security:
-- name: qdtContactManagement
-  allowedServices: []
-  javaServiceSetting: ALL
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
 services:
+- serviceName: project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_sqldb_azure_dada
+  packages:
+  - name: SttiPaaSDemoProject
+    version: "1.0"
+  - name: qdtContactManagement
+    version: "1.0"
 - serviceName: project.sttipaasdemo.integrations:sayhello
   packages:
   - name: SttiPaaSDemoProject
     version: "1.0"
   - name: qdtContactManagement
     version: "1.0"
+configurationVariables:
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.serverName
+  : sttlab.database.windows.net
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.trustStore
+  : ""
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.databaseName
+  : sqldb
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.keyStore
+  : ""
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.password
+  : "{AES}xQJbA1N3SVslXYLJd7vQXHtoPSIUr5vmkgNS5mqAKjw="
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionEnabled
+  : "false"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.user
+  : sttlab
+  ? artConnection.SttiPaaSDemoProject.project.sttipaasdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sqldb_azure_dada.connectionSettings.driverType
+  : Progress® DataDirect®
